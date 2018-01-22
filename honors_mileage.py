@@ -30,7 +30,7 @@ def get_data(tup):
 
 def print_data(tup):
   (c, p, ga, gp, fmt) = tup
-  print('(unit: {}); current odometer: {}, previous odometer: {}, fuel efficency: {}, gas price: {}.'.format(('metric' if fmt else 'us').upper(), c, p, ga, gp)) 
+  print('(unit: {}); current odometer: {}, previous odometer: {}, fuel efficiency: {}, gas price: {}.'.format(('metric' if fmt else 'us').upper(), c, p, ga, gp)) 
   return (tup, SUCCESS_MSG)
 
 def calculate(tup):
@@ -46,11 +46,11 @@ def calculate(tup):
 def repl():
   cur_od = -1
   pre_od = -1
-  fuel_efficency = -1
+  fuel_efficiency = -1
   gas_price = -1
   g_format = True # use metric
   
-  tup = (cur_od, pre_od, fuel_efficency, gas_price, g_format)
+  tup = (cur_od, pre_od, fuel_efficiency, gas_price, g_format)
   
   response = ''
 
